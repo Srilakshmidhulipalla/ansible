@@ -1,7 +1,8 @@
-name: ping the node
-hosts: mongodb
+# playbook is list of plays always it should start with "-"
+- name: ping the node
+  hosts: mongodb
 #list of tasks/modules/collections
-tasks:
+  tasks:
 - name: pingig the server
 # this is the map
   ansible.builtin.ping:
