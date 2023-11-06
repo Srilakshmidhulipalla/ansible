@@ -6,9 +6,9 @@
     private: false # you can see the value entered on screen 
   - name: PASSWORD
     prompt: please enter the password
-    private: true # you cannot see the value entered on screen
-    
+    private: true # you cannot see the value entered on screen  
   tasks:
   - name: print the variable values
     ansbile.builtin.debug:
-       msg: "username is {{USERNAME}}, password is {{PASSWORD}}"
+     msg: "username is {{USERNAME}}, password is {{PASSWORD}}"
+     
