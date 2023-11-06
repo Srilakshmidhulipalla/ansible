@@ -1,0 +1,14 @@
+- name: variables from prompt
+  hosts: localhost
+  vars_prompt:
+  - name: USERNAME
+    prompt: please enter the username
+    private: false # you can see the value entered on screen 
+  - name: PASSWORD
+    prompt: please enter the password
+    private: true # you cannot see the value entered on screen
+    tasks:
+    - name: print the variable values
+      ansbile.builtin.debug:
+       msg: "username is {{USERNAME}},password is {{PASSWORD}}"
+       
