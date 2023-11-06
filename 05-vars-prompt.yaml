@@ -9,6 +9,6 @@
     private: true # you cannot see the value entered on screen
     
   tasks:
-    - name: print the variable values
-      ansbile.builtin.debug:
+  - name: print the variable values
+    ansbile.builtin.debug:
        msg: "username is {{USERNAME}}, password is {{PASSWORD}}"
